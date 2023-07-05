@@ -1,2 +1,2 @@
-nombre = input()
-print("Bienvenida,", str(nombre), end="\n" "Ahora juguemos!")
+nombre = input("nombre del jugador:")
+print("Bienvenido,", str(nombre), end="\n" "Ahora juguemos!")
