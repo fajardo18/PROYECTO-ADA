@@ -13,6 +13,13 @@ Estará basado enteramente en la terminal y trabajaremos con caracteres ASCII.
 4. Pedir el nombre del jugador por teclado.
 5. Imprimir un mensaje de bienvenida con el nombre.
 
+   PROYECTO INTEGRADOR(Parte 2).
+   
+1. Instalar la librería: https://pypi.org/project/readchar/
+2. Investigrar cómo leer un caracter del teclado
+3. Escribir un programa que corra un bucle infinito leyendo e imprimiento las teclas y sólo terminará cuando se presione la tecla ↑ indicada como UP
+
+ 
  # El proyecto está en desarrollo.
 
 
