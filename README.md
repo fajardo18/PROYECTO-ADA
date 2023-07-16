@@ -13,7 +13,7 @@ Estará basado enteramente en la terminal y trabajaremos con caracteres ASCII.
 4. Pedir el nombre del jugador por teclado.
 5. Imprimir un mensaje de bienvenida con el nombre.
 
-   PROYECTO INTEGRADOR(Parte 2).
+    PROYECTO INTEGRADOR(Parte 2).
    
 1. Instalar la librería: https://pypi.org/project/readchar/
 2. Investigrar cómo leer un caracter del teclado
