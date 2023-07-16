@@ -13,6 +13,6 @@ Estará basado enteramente en la terminal y trabajaremos con caracteres ASCII.
 4. Pedir el nombre del jugador por teclado.
 5. Imprimir un mensaje de bienvenida con el nombre.
 
- # El proyecto está en desarrollo.
+# El proyecto está en desarrollo.
 
 
