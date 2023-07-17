@@ -9,9 +9,9 @@ import readchar
 # Bucle infinito
 while True:
     # Leer un carácter
-    char = readchar.readkey()
+    key = readchar.readkey()
     # Imprimir el carácter
-    print("Carácter ingresado:", char)
+    print("Carácter ingresado:", key)
     # Verificar si se presionó la tecla UP
-    if char == readchar.key.UP:
+    if key == readchar.key.UP:
         break
