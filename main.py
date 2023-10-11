@@ -22,7 +22,7 @@ mapa = string_to_matrix(laberinto)
 def main():
     main_loop(mapa, (0, 0), (11, 12))
 
-    path_a_mapas = 'mapas'  # Reemplaza esto con la ubicación de tus mapas
+    path_a_mapas = 'mapas'
     juego = JuegoArchivo(path_a_mapas)
     juego.main_loop()
 
