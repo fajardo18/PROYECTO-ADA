@@ -1,16 +1,31 @@
-# This is a sample Python script.
+from proyecto_integrador import main_loop, string_to_matrix
+from class_juego import Juego
+from class_juegoArchivo import JuegoArchivo
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+laberinto = """..###########
+....#.......#
+###.#.###.###
+#...#...#...#
+#.#####.#.#.#
+#...#.#.#.#.#
+#.#.#.#####.#
+#.#.....#.#.#
+#.###.###.#.#
+#.#.........#
+###.#####.###
+#.......#...#
+###########.#"""
+
+mapa = string_to_matrix(laberinto)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def main():
+    main_loop(mapa, (0, 0), (11, 12))
+
+    path_a_mapas = 'mapas'  # Reemplaza esto con la ubicación de tus mapas
+    juego = JuegoArchivo(path_a_mapas)
+    juego.main_loop()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    main()

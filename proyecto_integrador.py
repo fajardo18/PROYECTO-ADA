@@ -49,23 +49,6 @@ def string_to_matrix(laberinto: str):
     return [list(row) for row in laberinto.strip().split('\n')]
 
 
-laberinto = """..###########
-....#.......#
-###.#.###.###
-#...#...#...#
-#.#####.#.#.#
-#...#.#.#.#.#
-#.#.#.#####.#
-#.#.....#.#.#
-#.###.###.#.#
-#.#.........#
-###.#####.###
-#.......#...#
-###########.#"""
-
-mapa = string_to_matrix(laberinto)
-
-
 def screen(mapa):
 
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -95,20 +78,15 @@ def main_loop(mapa: List[List[str]], posicion_inicial: Tuple[int, int], posicion
 
         new_px, new_py = px + x, py + y
 
-        if (0 <= new_px < len(mapa) and
-            0 <= new_py < len(mapa[0]) and
-            mapa[new_px][new_py] != '#'
-            ):
+        if 0 <= new_px < len(mapa) and 0 <= new_py < len(mapa[0]) and mapa[new_px][new_py] != '#':
             mapa[px][py] = '.'
             px, py = new_px, new_py
             mapa[px][py] = 'P'
 
             screen(mapa)
+            print(px, py)
 
+        if new_px == 12 and new_py == 11:
+            break
 
-# Definir las coordenadas iniciales y finales
-start = (0, 0)
-end = (len(mapa) - 1, len(mapa[0]) - 1)
-
-# Iniciar el bucle principal
-main_loop(mapa, start, end)
+    print('fin de juego')
